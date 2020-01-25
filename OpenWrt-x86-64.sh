@@ -116,24 +116,24 @@ CONFIG_PACKAGE_luci-app-serverchan=y
 EOF
 
 # ShadowsocksR插件:
-# cat >> .config <<EOF
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-# EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+EOF
 
 # 常用LuCI插件选择:
 cat >> .config <<EOF
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun is not set
-# CONFIG_PACKAGE_luci-app-transmission is not set
-# CONFIG_PACKAGE_luci-app-qbittorrent is not set
-# CONFIG_PACKAGE_luci-app-xlnetacc is not set
-# CONFIG_PACKAGE_luci-app-zerotier is not set
-# CONFIG_PACKAGE_luci-app-adbyby-plus is not set
-# CONFIG_PACKAGE_luci-app-v2ray-server is not set
-# CONFIG_PACKAGE_luci-app-pptp-server is not set
-# CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun is not set
+CONFIG_PACKAGE_luci-app-transmission is not set
+CONFIG_PACKAGE_luci-app-qbittorrent is not set
+CONFIG_PACKAGE_luci-app-xlnetacc is not set
+CONFIG_PACKAGE_luci-app-zerotier is not set
+CONFIG_PACKAGE_luci-app-adbyby-plus is not set
+CONFIG_PACKAGE_luci-app-v2ray-server is not set
+CONFIG_PACKAGE_luci-app-pptp-server is not set
+CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
 CONFIG_PACKAGE_luci-app-softethervpn=y
 CONFIG_PACKAGE_luci-app-haproxy-tcp=y
 CONFIG_PACKAGE_luci-app-webadmin=y
@@ -153,9 +153,9 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_curl=y
 CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_nano=y
-# CONFIG_PACKAGE_screen=y
-# CONFIG_PACKAGE_tree=y
-# CONFIG_PACKAGE_vim-fuller=y
+CONFIG_PACKAGE_screen=y
+CONFIG_PACKAGE_tree=y
+CONFIG_PACKAGE_vim-fuller=y
 CONFIG_PACKAGE_wget=y
 EOF
 
